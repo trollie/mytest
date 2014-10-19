@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="coworkers">Coworkers</string>
+    <string name="family">Family</string>
+    <string name="friends">Friends</string>
+    <string name="my_contacts">My Contacts</string>
+    
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="@dimen/widget_margin" >
+  
+	<LinearLayout 
+	    android:id="@+id/layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal"  ><!-- 
+		android:background="@drawable/myshape" -->
+	
+	    <ImageView 
+	        android:id="@+id/picture"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="8dp"
+	        android:layout_gravity="center"
+	        android:layout_centerVertical="true"
+	        android:adjustViewBounds="true"
+	        />
+	        
+		<RelativeLayout 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/picture"
+			android:layout_marginTop="4dp" 
+			android:layout_marginBottom="4dp" 
+			android:layout_marginLeft="2dp" >
+			
+		    <LinearLayout 
+		    	android:id="@+id/dates"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_centerVertical="true"
+				android:orientation="vertical" >	
+			
+				<TextView
+			        android:id="@+id/date1"
+			        android:textSize="12sp"
+			        android:textColor="#ddd"
+			        android:shadowColor="#111"
+			        android:shadowRadius="0.5"
+			        android:shadowDx="0.5"
+			        android:shadowDy="0.5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:gravity="center"
+			        android:lines="1" >
+			    </TextView>
+		        
+				<TextView
+			        android:id="@+id/date2"
+			        android:textSize="11sp"
+			        android:textColor="#ddd"
+			        android:shadowColor="#111"
+			        android:shadowRadius="0.5"
+			        android:shadowDx="0.5"
+			        android:shadowDy="0.5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:gravity="center"
+			        android:layout_below="@id/date1"
+			        android:lines="1" >
+			    </TextView>
+			        
+			    <TextView
+			        android:id="@+id/date3"
+			        android:textSize="11sp"
+			        android:textColor="#ccc"
+			        android:shadowColor="#111"
+			        android:shadowRadius="0.5"
+			        android:shadowDx="0.5"
+			        android:shadowDy="0.5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:gravity="center"
+			        android:layout_below="@id/date2"
+			        android:lines="1" >
+			    </TextView> 
+			       
+			    <TextView
+			        android:id="@+id/date4"
+			        android:textSize="11sp"
+			        android:textColor="#bbb"
+			        android:shadowColor="#111"
+			        android:shadowRadius="0.5"
+			        android:shadowDx="0.5"
+			        android:shadowDy="0.5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:gravity="center"
+			        android:layout_below="@id/date3"
+			        android:lines="1" >
+			    </TextView>	
+			       
+			    <TextView
+			        android:id="@+id/date5"
+			        android:textSize="1sp"
+			        android:textColor="#bbb"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:gravity="center"
+			        android:layout_below="@id/date4"
+			        android:lines="1" >
+			    </TextView>	
+			</LinearLayout>
+		    
+		    <LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_centerVertical="true"
+				android:orientation="vertical" 
+				android:layout_toRightOf="@id/dates" 
+				android:layout_marginLeft="8dp" >	
+			
+				<TextView
+			        android:id="@+id/name1"
+			        android:textSize="12sp"
+			        android:textStyle="bold"
+			        android:textColor="#eee"
+			        android:shadowColor="#111"
+			        android:shadowRadius="1.0"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:gravity="left"
+			        android:lines="1" >
+			    </TextView>
+		        
+				<TextView
+			        android:id="@+id/name2"
+			        android:textSize="12sp"
+			        android:textStyle="bold"
+			        android:textColor="#ddd"
+			        android:shadowColor="#111"
+			        android:shadowRadius="2.0"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:gravity="left"
+			        android:layout_below="@id/name1"
+			        android:lines="1" >
+			    </TextView>
+			        
+			    <TextView
+			        android:id="@+id/name3"
+			        android:textSize="12sp"
+			        android:textStyle="bold"
+			        android:textColor="#ccc"
+			        android:shadowColor="#111"
+			        android:shadowRadius="2.0"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:gravity="left"
+			        android:layout_below="@id/name2"
+			        android:lines="1" >
+			    </TextView> 
+			       
+			    <TextView
+			        android:id="@+id/name4"
+			        android:textSize="12sp"
+			        android:textStyle="bold"
+			        android:textColor="#bbb"
+			        android:shadowColor="#111"
+			        android:shadowRadius="2.0"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:gravity="left"
+			        android:layout_below="@id/name3"
+			        android:lines="1" >
+			    </TextView>	
+			       
+			    <TextView
+			        android:id="@+id/name5"
+			        android:textSize="1sp"
+			        android:textStyle="bold"
+			        android:textColor="#bbb"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:gravity="left"
+			        android:layout_below="@id/name4"
+			        android:lines="1" >
+			    </TextView>	
+			    		    </LinearLayout>
+		    	        
+		</RelativeLayout>
+	        
+	</LinearLayout>
+	
+</FrameLayout>
